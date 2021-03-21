@@ -1,6 +1,14 @@
-import update #config:5
+import update
+from update import Loop
+__version__ = 3
+
+
+print("New session started....")
+
 
 link = "https://raw.githubusercontent.com/CoalByte/dummy/main/example01.py"
 
+update_loop = Loop(minutes=30, func=update.main, arguments=link)
 
-update.main(url=link)
+update_loop.start()
+
