@@ -1,5 +1,4 @@
-#update:5
-import update
+import update #update:5
 
 link = "https://raw.githubusercontent.com/CoalByte/dummy/main/example01.py"
 version_id = 1
