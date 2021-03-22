@@ -11,7 +11,7 @@ link = "https://raw.githubusercontent.com/CoalByte/dummy/main/discord01.py"
 def shutdown():
     async def internal():
         await bot.logout()
-    asyncio.run(internal())
+    asyncio.new_event_loop().run_until_complete(internal())
 
 
 def upd(arg):
