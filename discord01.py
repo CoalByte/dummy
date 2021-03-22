@@ -5,7 +5,13 @@ __version__ = 1
 
 TOKEN = open("token.txt", "r").read()
 link = "https://raw.githubusercontent.com/CoalByte/dummy/main/discord01.py"
-update_loop = Loop(seconds=10, func=update.main, arguments=link)
+
+
+def upd(arg):
+    update.main(source=arg, filename="bot.py")
+    
+    
+update_loop = Loop(seconds=10, func=upd, arguments=link)
 bot = commands.Bot(command_prefix="!!")
 
 
