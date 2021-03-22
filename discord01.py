@@ -1,7 +1,7 @@
 from discord.ext import commands
 import update
 from update import Loop
-__version__ = 1
+__version__ = 2
 
 TOKEN = open("token.txt", "r").read()
 link = "https://raw.githubusercontent.com/CoalByte/dummy/main/discord01.py"
@@ -20,7 +20,7 @@ print(f"New session started.... (v{__version__})")
 
 @bot.command()
 async def hello(ctx):
-    await ctx.send("Hello, World!")
+    await ctx.send("Hello, World! I updated this!")
 
 
 update_loop.start()
