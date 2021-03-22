@@ -2,7 +2,7 @@ from discord.ext import commands
 import update
 from update import Loop
 import asyncio
-__version__ = 4
+__version__ = 5
 
 TOKEN = open("token.txt", "r").read()
 link = "https://raw.githubusercontent.com/CoalByte/dummy/main/discord01.py"
